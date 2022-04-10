@@ -9,21 +9,18 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
 
   const handleNavClick = (e) => {
-    const meta = e.target.innerText;
-    console.log(meta);
-    setSelectedNav(meta);
+    const text = e.target.innerText;
+    setSelectedNav(text);
   };
 
   const handleNavSlide = () => {
-    console.log("clicked");
-    console.log(showMenu);
     setShowMenu(prevState => !prevState)
   };
 
   return (
     <nav className="header">
       <div className="header__chosen--link">{selectedNav}</div>
-      <div className={!showMenu ? "header__navlinks" : "header__navlinksactive" }>
+      <div className={!showMenu ? "header__navlinks" : "header__navlinks active" }>
         <NavLink onClick={handleNavClick} className="header__link" to="/">
           giorgi.is()
         </NavLink>
@@ -44,7 +41,7 @@ const Header = () => {
         >
           .contact()
         </NavLink>
-        {/* <div className="header__link--logos"> */}
+        <div className="header__link--logos">
           <a
             className="header__link"
             target="_blank"
@@ -63,11 +60,11 @@ const Header = () => {
             <LinkedInIcon />
           </a>
         </div>
-      {/* </div> */}
+      </div>
       <div className="burgermenu" onClick={handleNavSlide}>
-        <div className="burgermenu__line1"></div>
-        <div className="burgermenu__line2"></div>
-        <div className="burgermenu__line3"></div>
+        <div className="burgermenu__dot"></div>
+        <div className="burgermenu__dot"></div>
+        <div className="burgermenu__dot"></div>
       </div>
     </nav>
   );
