@@ -1,11 +1,17 @@
-import "./About.css"
+import "./About.css";
+import { motion } from "framer-motion";
 
 const About = () => {
-	return (
-		<div>
-			<h1 className="abouth1">About Page</h1>
-		</div>
-	)
-}
+  return (
+    <motion.div
+      initial={{ wid: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <h1 className="abouth1">About Page</h1>
+    </motion.div>
+  );
+};
 
-export default About
+export default About;
