@@ -1,0 +1,26 @@
+.introduction{
+	width: 50%;
+	margin-top: 300px;
+	border: 2px solid salmon;
+}
+
+.introduction__name{
+	color: #dbdbdb;
+}
+
+.introduction__is--span {
+	color: #672ae9;
+}
+
+.introduction__h5 {
+	color: #672ae9;
+	font-weight: 700;
+	margin-top: 10px;
+	font-size: 1.2rem;
+}
+
+.introduction__dev--span {
+	color: #727474;
+	font-size: 2.2rem;
+	font-weight: 700;
+}

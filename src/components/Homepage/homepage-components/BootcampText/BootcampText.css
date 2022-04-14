@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.bootcampText {
+	border: 2px solid green;
+	width: 50%;
+	margin-top: 600px;
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+}
+
+.bootcampText__line1{
+	color: #dbdbdb;
+}
+
+.bootcampText__line2{
+	color: #dbdbdb;
+}

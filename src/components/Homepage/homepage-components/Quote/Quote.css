@@ -1,0 +1,16 @@
+
+.quote {
+	width: 50%;
+	margin-top: 900px;
+	border: 2px solid teal;
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+}
+
+.quote__title{
+	color: #dbdbdb;
+}
+
+.quote__body{
+	color: #dbdbdb;
+}

@@ -1,0 +1,19 @@
+.loveLetter{
+	border: 2px solid green;
+	width: 50%;
+	margin-top: 600px;
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+}
+
+.loveLetter__line1{
+	color: #dbdbdb;
+}
+
+.loveLetter__line2{
+	color: #dbdbdb;
+}
+
+.loveLetter__line3{
+	color: #dbdbdb;
+}
