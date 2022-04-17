@@ -6,17 +6,19 @@
 
 .introduction__name{
 	color: #dbdbdb;
+	font-size: 4rem;
 }
 
 .introduction__is--span {
 	color: #672ae9;
+	font-size: 4rem;
 }
 
 .introduction__h5 {
 	color: #672ae9;
 	font-weight: 700;
 	margin-top: 10px;
-	font-size: 1.2rem;
+	font-size: 2rem;
 }
 
 .introduction__dev--span {

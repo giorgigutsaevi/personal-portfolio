@@ -14,6 +14,7 @@ const Acknowledgement = () => {
         <h5>GSAP</h5>
         <h5>ScrollTrigger</h5>
         <h5>FramerMotion</h5>
+        <h5>React Intersection Observer API</h5>
       </div>
       <div>
         Thanks for visiting my website!

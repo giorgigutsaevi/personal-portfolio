@@ -4,11 +4,11 @@ const LoveLetter = () => {
   return (
     <div className="loveLetter">
       <p className="loveLetter__line1">
-        I fell in love with coding ever since.
+        I fell in love with <span className="loveLetter__coding">coding.</span>
       </p>
       <p className="loveLetter__line2">
-        If I am not coding, I am probably out somewhere searching for my next
-        favourite<span> cheese.</span>
+        When I am not coding, I am probably out somewhere searching for my next
+        favourite<span className="loveLetter__cheese"> cheese.</span>
       </p>
       <p className="loveLetter__line3">
        The smellier, the better.
