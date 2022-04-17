@@ -9,10 +9,10 @@ const Quote = (props) => {
       <p className="quote__comment">// words I try to live by</p>
       <br />
       <h3 className="quote__body" >
-      Before enlightenment, chop wood, carry water.
+      Before enlightenment, chop wood, and carry water.
         <br />
         <br />
-        After enlightenment, chop wood, carry water.
+        After enlightenment, chop wood, and carry water.
         <br />
       </h3>
     </div>

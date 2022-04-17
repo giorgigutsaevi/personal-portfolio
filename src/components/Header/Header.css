@@ -2,8 +2,9 @@
 
 .header {
 	display: flex;
-	min-height: 7vh;
+	min-height: 8vh;
 	align-items: center;
+	z-index: 5;  
 }
 
 .header__chosen--link {
@@ -56,6 +57,13 @@
 	background-color: #672ae9;
 	margin-top: 5px;
 	border-radius: 50%;
+}
+
+.scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
 }
 
 

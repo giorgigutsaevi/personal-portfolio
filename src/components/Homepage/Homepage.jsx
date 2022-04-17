@@ -24,10 +24,10 @@ const Homepage = () => {
   // useEffect hook for gsap animations
   useEffect(() => {
     const textAnimation = gsap.from(".introduction", {
-      scale: 0,
+      scale: 0.5,
       opacity: 0,
-      duration: 4,
-      y: -400,
+      duration: 2.2,
+      y: -200,
     });
 
     const bootcampTextAnimation = gsap.from(".bootcampText", {
@@ -70,7 +70,7 @@ const Homepage = () => {
 
     let width = window.innerWidth;
     let speed = 80; //   pixels per second
-    let endX = width + 300;
+    let endX = 300;
     let duration = endX / speed;
     let ease = "sine.inOut";
 
@@ -78,14 +78,13 @@ const Homepage = () => {
     let rocketTo = gsap.timeline({
       scrollTrigger: {
         trigger: ".box3",
-        start: "top 80%",
+        start: "top 90%",
         end: "bottom 50%",
         markers: true,
         scrub: 0.3,
       },
     });
     rocketTo.to(".box3", { duration: duration, x: endX, ease: ease });
-    rocketTo.to(".box3", { duration: duration, y: -80, ease: ease });
 
     const acknowledgementAnimation = gsap.from(".mentions", {
       duration: 2,
@@ -108,6 +107,7 @@ const Homepage = () => {
       loveLetterAnimation.kill();
       quoteAnimation.kill();
       rocketTo.kill();
+      acknowledgementAnimation.kill();
     };
   }, []);
 
