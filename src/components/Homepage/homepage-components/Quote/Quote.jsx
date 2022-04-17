@@ -1,17 +1,19 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import "./Quote.css"
-import { forwardRef } from "react";
 
 const Quote = (props) => {
 
   return (
     <div className="quote" ref={props.innerRef}>
-      <h1 className="quote__title"> &#10094;/quote wrapper&#10095;</h1>
+      <h2> <span>&lt;</span>quote wrapper<span>&gt;</span></h2>
+      <p className="quote__comment">// words I try to live by</p>
+      <br />
       <h3 className="quote__body" >
-        “Before enlightenment, chop wood, carry water.
+      Before enlightenment, chop wood, carry water.
         <br />
-        After enlightenment, chop wood, carry water.”
         <br />
-        <br />zen saying
+        After enlightenment, chop wood, carry water.
+        <br />
       </h3>
     </div>
   );

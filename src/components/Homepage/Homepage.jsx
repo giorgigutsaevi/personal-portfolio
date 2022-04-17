@@ -6,13 +6,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useInView } from "react-intersection-observer";
 
 import IntroductionText from "./homepage-components/IntroductionText/IntroductionText";
-import Acknowledgement from "./homepage-components/Acknowledgement/Acknowledgement";
-import Illustration1 from "./homepage-components/Illustration/Illustration1";
+import Mentions from "./homepage-components/Mentions/Mentions";
 import Quote from "./homepage-components/Quote/Quote";
 import BootcampText from "./homepage-components/BootcampText/BootcampText";
 import LoveLetter from "./homepage-components/LoveLetter/LoveLetter";
+import Illustration1 from "./homepage-components/Illustration/Illustration1";
 import Illustration2 from "./homepage-components/Illustration2/Illustration2";
 import Illustration3 from "./homepage-components/Illustration3/Illustration3";
+import Outro from "./homepage-components/Outro/Outro";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +69,7 @@ const Homepage = () => {
     });
 
     let width = window.innerWidth;
-    let speed = 150; //   pixels per second
+    let speed = 80; //   pixels per second
     let endX = width + 300;
     let duration = endX / speed;
     let ease = "sine.inOut";
@@ -86,15 +87,16 @@ const Homepage = () => {
     rocketTo.to(".box3", { duration: duration, x: endX, ease: ease });
     rocketTo.to(".box3", { duration: duration, y: -80, ease: ease });
 
-    const acknowledgementAnimation = gsap.from(".acknowledgement", {
+    const acknowledgementAnimation = gsap.from(".mentions", {
       duration: 2,
       opacity: 0,
       scale: 1,
-      y: -400,
+      y: -100,
       scrollTrigger: {
-        trigger: ".acknowledgement",
+        trigger: ".mentions",
         scrub: true,
-        start: "top 80%",
+        start: "top 70%",
+        end: "bottom 50%",
         markers: true,
       },
     });
@@ -138,7 +140,8 @@ const Homepage = () => {
         <Illustration1 />
         <Illustration3 />
         <Quote innerRef={myRef} />
-        <Acknowledgement />
+        <Mentions />
+        <Outro/>
       </div>
     </motion.div>
   );

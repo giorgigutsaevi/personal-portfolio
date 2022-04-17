@@ -1,0 +1,24 @@
+.mentions{
+	border: 2px solid orange;
+	color: snow;
+	width: 50%;
+	margin-top: 450px;
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.mentions__codeSymb{
+	color: #672ae9;
+	font-size: 1.8em;
+}
+
+.mentions__comment{
+	color: #727474;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+}
+
+.mentions__list h5{
+	color: #672ae9;
+}

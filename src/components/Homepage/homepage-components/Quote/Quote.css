@@ -1,16 +1,33 @@
 
 .quote {
 	width: 50%;
-	margin-top: 300px;
+	margin-top: 350px;
 	border: 2px solid teal;
 	font-family: 'Space Mono', monospace;
-	font-weight: 700;
+	position: relative;
 }
 
-.quote__title{
-	color: #dbdbdb;
+.quote h2{
+	color: #672ae9 !important;
+	font-weight: 700 !important;
+}
+
+/* .quote__body::before{
+	position: absolute;
+	content: "";
+	height: 4.4em;
+	width: 2px;
+	left: -12px;
+	background-color: #672ae9;
+} */
+
+.quote__comment{
+	font-size: 1.2em;
+	color: #727474;
 }
 
 .quote__body{
 	color: #dbdbdb;
+	font-weight: 700;
+	font-size: 2em;
 }
