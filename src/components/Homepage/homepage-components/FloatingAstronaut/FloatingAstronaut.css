@@ -1,0 +1,29 @@
+
+.floating-astronaut{
+	width: 550px;
+	margin-top: 40px;
+	position: absolute;
+	left: -500px;
+	bottom: 20%;
+	z-index: -2;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	.floating-astronaut{
+		width: 200px;
+		bottom: 20%;
+	}
+}
+
+@media only screen and (min-device-width: 667px) and (max-device-width: 825px) {
+	.floating-astronaut{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.floating-astronaut{
+		width: 200px;
+		bottom: 26%;
+	}
+}

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./Homepage.css";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -10,16 +11,15 @@ import Mentions from "./homepage-components/Mentions/Mentions";
 import Quote from "./homepage-components/Quote/Quote";
 import BootcampText from "./homepage-components/BootcampText/BootcampText";
 import LoveLetter from "./homepage-components/LoveLetter/LoveLetter";
-import Illustration1 from "./homepage-components/Illustration/Illustration1";
-import Illustration2 from "./homepage-components/Illustration2/Illustration2";
-import Illustration3 from "./homepage-components/Illustration3/Illustration3";
+import ZenAnimation from "./homepage-components/ZenAnimation/ZenAnimation";
+import PurpleDude from "./homepage-components/PurpleDude/PurpleDude";
+import FloatingAstronaut from "./homepage-components/FloatingAstronaut/FloatingAstronaut";
 import Outro from "./homepage-components/Outro/Outro";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Homepage = () => {
   const { ref: myRef, inView: isQuoteVisible } = useInView();
-  const { ref: astronautRef, inView: isAstronautVisible } = useInView();
 
   // useEffect hook for gsap animations
   useEffect(() => {
@@ -34,11 +34,12 @@ const Homepage = () => {
       duration: 1,
       opacity: 0,
       scale: 1,
-      y: 300,
+      ease: "ease-in",
+      y: 350,
       scrollTrigger: {
-        trigger: ".box2",
+        trigger: ".bootcampText",
         scrub: true,
-        markers: true,
+        end: "bottom 50%",
       },
     });
 
@@ -46,11 +47,13 @@ const Homepage = () => {
       duration: 1,
       opacity: 0,
       scale: 1,
-      y: 250,
+      ease: "ease-in",
+      y: 300,
       scrollTrigger: {
-        trigger: ".box",
+        trigger: ".loveLetter",
         scrub: true,
-        markers: true,
+        start: "top 80%",
+        end: "bottom 50%",
       },
     });
 
@@ -62,29 +65,30 @@ const Homepage = () => {
       y: 130,
       scrollTrigger: {
         trigger: ".quote",
-        start: "top 90%",
+        start: "top 80%",
+        end: "bottom 50%",
         scrub: true,
-        markers: true,
       },
     });
 
-    let width = window.innerWidth;
-    let speed = 80; //   pixels per second
-    let endX = 300;
+    let speed = 70; //   pixels per second
+    let endX = 450;
     let duration = endX / speed;
     let ease = "sine.inOut";
 
-    // NEED THIS (ANIMATION COMING IN)
-    let rocketTo = gsap.timeline({
+    const floatingAstronaut = gsap.timeline({
       scrollTrigger: {
-        trigger: ".box3",
+        trigger: ".floating-astronaut",
         start: "top 90%",
         end: "bottom 50%",
-        markers: true,
         scrub: 0.3,
       },
     });
-    rocketTo.to(".box3", { duration: duration, x: endX, ease: ease });
+    floatingAstronaut.to(".floating-astronaut", {
+      duration: duration,
+      x: endX,
+      ease: ease,
+    });
 
     const acknowledgementAnimation = gsap.from(".mentions", {
       duration: 2,
@@ -96,7 +100,6 @@ const Homepage = () => {
         scrub: true,
         start: "top 70%",
         end: "bottom 50%",
-        markers: true,
       },
     });
 
@@ -106,22 +109,10 @@ const Homepage = () => {
       textAnimation.kill();
       loveLetterAnimation.kill();
       quoteAnimation.kill();
-      rocketTo.kill();
+      floatingAstronaut.kill();
       acknowledgementAnimation.kill();
     };
   }, []);
-
-  // useEffect hook for Intersection Observer API
-  // useEffect(()=>{
-  //   console.log("my ref ->", myRef.current)
-  //   const observer = new IntersectionObserver((entries)=> {
-  //     const entry = entries[0]
-  //     setIsQuoteVisible(entry.isIntersecting)
-  //     // console.log('entry', entry)
-  //   })
-  //   observer.observe(myRef.current)
-  // }, [])
-  // console.log('isQuoteVisible? ->', isQuoteVisible)
 
   return (
     <motion.div
@@ -131,17 +122,16 @@ const Homepage = () => {
       transition={{ ease: "easeOut", duration: 1 }}
       exit={{ opacity: 0 }}
     >
-      {/* <h1>Homepage</h1> */}
       <div className="homepage__container">
         <IntroductionText />
         <BootcampText />
-        <Illustration2 />
+        <PurpleDude />
         <LoveLetter />
-        <Illustration1 />
-        <Illustration3 />
+        <ZenAnimation />
+        <FloatingAstronaut />
         <Quote innerRef={myRef} />
         <Mentions />
-        <Outro/>
+        <Outro />
       </div>
     </motion.div>
   );

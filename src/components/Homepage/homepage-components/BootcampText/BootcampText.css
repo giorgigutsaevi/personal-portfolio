@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 .bootcampText {
-	border: 2px solid green;
 	width: 50%;
 	margin-top: 400px;
 	font-family: 'Space Mono', monospace;
@@ -19,4 +18,47 @@
 
 .bootcampText__line2{
 	color: #dbdbdb;
+}
+
+@media screen and (max-width: 768px) {
+	.bootcampText{
+		width: 80%
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	.bootcampText{
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	.bootcampText__line1{
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+
+	.bootcampText__line2{
+		white-space: initial;
+		font-size: 1.5rem;
+		margin-top: 2em;
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+	.bootcampText{
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	.bootcampText__line1{
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+
+	.bootcampText__line2{
+		white-space: initial;
+		font-size: 1.5rem;
+		margin-top: 2em;
+	}
 }

@@ -1,5 +1,4 @@
-.loveLetter{
-	border: 2px solid green;
+.loveLetter {
 	width: 50%;
 	margin-top: 300px;
 	font-family: 'Space Mono', monospace;
@@ -7,22 +6,77 @@
 	font-size: 2.3rem;
 }
 
-.loveLetter__coding{
+.loveLetter__coding {
 	color: #672ae9;
 }
 
-.loveLetter__cheese{
+.loveLetter__cheese {
 	color: #672ae9;
 }
 
-.loveLetter__line1{
+.loveLetter__line1 {
 	color: #dbdbdb;
 }
 
-.loveLetter__line2{
+.loveLetter__line2 {
 	color: #dbdbdb;
 }
 
-.loveLetter__line3{
+.loveLetter__line3 {
 	color: #dbdbdb;
+}
+
+@media screen and (max-width: 768px) {
+	.loveLetter {
+		width: 80%
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	.loveLetter {
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	.loveLetter__line1 {
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+
+	.loveLetter__line2 {
+		white-space: initial;
+		font-size: 1.5rem;
+		margin-top: 2em;
+	}
+
+	.loveLetter__line3 {
+		white-space: initial;
+		font-size: 1.5rem;
+		margin-top: 2em;
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+	.loveLetter {
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	.loveLetter__line1 {
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+
+	.loveLetter__line2 {
+		white-space: initial;
+		font-size: 1.5rem;
+		margin-top: 2em;
+	}
+
+	.loveLetter__line3 {
+		white-space: initial;
+		font-size: 1.5rem;
+		margin-top: 2em;
+	}
 }

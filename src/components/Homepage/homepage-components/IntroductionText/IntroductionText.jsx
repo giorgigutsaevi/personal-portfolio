@@ -7,9 +7,9 @@ const IntroductionText = () => {
         <span className="introduction__name">giorgi</span><span className="introduction__is--span">.is()</span>
         <br />
         <p className="introduction__h5">Giorgi Gutsaev</p>
-        <span className="introduction__dev--span">
+        <p className="introduction__dev--span">
           junior full stack developer()
-        </span>
+        </p>
       </h1>
     </div>
   );

@@ -1,0 +1,43 @@
+
+
+.purple-dude{
+	position: absolute;
+	top: calc(35%);
+	left: 0;
+	z-index: -1;
+	height: 500px;
+	width: 340px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	.purple-dude{
+		position: absolute;
+		top: calc(20%);
+		height: 200px;
+		width: 130px;
+	}
+}
+
+@media only screen and (min-device-width: 667px) and (max-device-width: 825px) {
+	.purple-dude{
+		top: calc(32%);
+		height: 350px;
+		width: 260px;
+	}
+}
+
+@media only screen and (min-device-width: 667px) and (max-device-width: 825px) {
+	.purple-dude{
+		top: calc(37%);
+		height: 350px;
+		width: 260px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.purple-dude{
+		width: 120px;
+		height: 220px;
+		top: calc(35%);
+	}
+}

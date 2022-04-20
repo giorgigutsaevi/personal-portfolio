@@ -5,7 +5,7 @@ const Mentions = () => {
   return (
     <div className="mentions">
       {/* <img
-			src='/images/totoro.gif'
+			src='/images/loading-gif.gif'
 			alt='lab-gif'
 			/> */}
       <div className="mentions__list">
@@ -16,6 +16,8 @@ const Mentions = () => {
         <h5>ScrollTrigger</h5>
         <h5>FramerMotion</h5>
         <h5>React Intersection Observer API</h5>
+        <h5 className='acknowledgement'>Special thanks to</h5>
+        <h4>Icons 8 from Ouch!</h4>
       </div>
     </div>
   );

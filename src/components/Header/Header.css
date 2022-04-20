@@ -4,7 +4,10 @@
 	display: flex;
 	min-height: 8vh;
 	align-items: center;
-	z-index: 5;  
+	z-index: 100;
+	top: -30px;
+	left: 0;
+	transition: all 1s ease-in-out;
 }
 
 .header__chosen--link {
@@ -14,7 +17,9 @@
 	margin-left: 2rem;
 	text-align: left;
 	width: 100%;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	z-index: 20;
+	transition: all 0.7s ease-in;
 }
 
 .header__navlinks {
@@ -28,11 +33,12 @@
 	font-family: 'Space Mono', monospace;
 	padding: 10px;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: 700;
+	transition: all 0.7s ease-in;
 }
 
-.header__link:hover, :focus, :active{
+.header__link:hover, :focus, :active {
 	color: #727474;
 }
 
@@ -59,61 +65,91 @@
 	border-radius: 50%;
 }
 
-.scrolled{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
+.scrolled {
+	transition: all 0.7s ease-in;
+	width: 100%;
+	position: fixed;
+	background-color: #0d1212;
+	top: 0;
+	left: 0;
 }
 
-
 @media screen and (max-width: 1024px) {
+	body {
+		overflow-x: hidden !important;
+	}
+
 	.header__navlinks {
 		width: 70%;
 	}
+
 }
+
+/* For Desktop */
+@media (min-width:769px) and (max-width:1024px) {
+	body {
+		overflow-x: hidden !important;
+	}
+}
+
+/* For Tablet */
+@media (min-device-width:769px) and (max-device-width:1024px) {
+	body {
+		overflow-x: hidden !important;
+	}
+}
+
 
 @media screen and (max-width: 768px) {
 	body {
 		overflow-x: hidden;
+		width: 100%;
+		position: absolute;
 	}
 
 	.header__navlinks {
-		/* transition: all 1s ease-out; */
 		position: absolute;
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: flex-end;
 		justify-content: flex-end;
 		margin-bottom: 5em;
 		padding-bottom: 40px;
-		transform: translateX(100%);
+		transform: translateX(140%);
 	}
 
 	.header__link {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
-
-	/* .header__navlinks a {
-		opacity: 0;
-	} */
 
 	.burgermenu {
 		display: block;
 		margin-right: 1rem;
 
 	}
-	.burgermenu:hover .burgermenu__dot{
+
+	.burgermenu:hover .burgermenu__dot {
 		transition: all 1.2s ease-in-out;
 		background-color: #727474;
-
 	}
+
 }
 
-.active{
+/* Small mobile dimensions */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	html, body {
+		position: absolute;
+		overflow-x: scroll !important;
+		white-space: nowrap; 
+	}
+
+}
+
+.active {
 	transition: all 0.8s ease-in-out;
 	transform: translateX(0%);
 }

@@ -1,5 +1,4 @@
 .outro{
-	border: 2px solid orangered;
 	color: snow;
 	width: 50%;
 	margin-top: 200px;
@@ -29,4 +28,45 @@
 .outro__link:hover{
 	transition: all 1.4s ease-out;
 	color: #727474;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	.outro {
+		width: 90%;
+	}
+
+	.outro__title{
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+	.outro__body{
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-device-width: 667px) and (max-device-width: 825px) {
+	
+	.outro__title{
+		font-size: 1.5rem;
+	}
+	.outro__body{
+		font-size: 3rem;
+	}
+}
+
+
+@media screen and (max-width: 375px) {
+	.outro {
+		width: 90%;
+	}
+
+	.outro__title{
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+	.outro__body{
+		white-space: initial;
+		font-size: 1.5rem;
+	}
 }

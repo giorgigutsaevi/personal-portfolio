@@ -6,9 +6,9 @@ const Outro = () => {
     <div className="outro">
       <p className="outro__title">Thanks for stopping by.</p>
       <p className="outro__body">
-        Check out my{" "}
+        Check out 
         <span className="outro__projects">
-          <Link className='outro__link' to='/projects'>projects()</Link>
+          <Link className='outro__link' to='/projects'> projects()</Link>
         </span> for more details.
       </p>
     </div>

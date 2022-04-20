@@ -1,5 +1,4 @@
 .mentions{
-	border: 2px solid orange;
 	color: snow;
 	width: 50%;
 	margin-top: 450px;
@@ -22,4 +21,20 @@
 
 .mentions__list h5{
 	color: #672ae9;
+}
+
+.acknowledgement{
+	color: #727474 !important;
+	margin-top: 20px !important;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	.mentions {
+		width: 90%;
+	}
+	.mentions__list:last-child{
+		white-space: initial;
+		font-size: 1.5rem;
+	}
+
 }

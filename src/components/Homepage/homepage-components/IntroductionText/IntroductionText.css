@@ -1,7 +1,6 @@
 .introduction{
 	width: 50%;
 	margin-top: 300px;
-	border: 2px solid salmon;
 }
 
 .introduction__name{
@@ -25,4 +24,56 @@
 	color: #727474;
 	font-size: 2.2rem;
 	font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+
+	.introduction{
+		width: 80%;
+	}
+	
+	.introduction__name{
+		font-size: 3rem;
+	}
+
+	.introduction__is--span {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	
+	.introduction{
+		width: 90%;
+	}
+	
+	.introduction__name{
+		font-size: 2.2rem;
+	}
+
+	.introduction__is--span {
+		font-size: 2.2rem;
+	}
+	.introduction__dev--span {
+		font-size: 1rem;
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.introduction{
+		width: 90%;
+	}
+	
+	.introduction__name{
+		font-size: 2.2rem;
+	}
+
+	.introduction__is--span {
+		font-size: 2.2rem;
+	}
+	.introduction__dev--span {
+		font-size: 1rem;
+		width: 20%;
+	}
 }

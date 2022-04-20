@@ -3,6 +3,7 @@
 .homepage {
 	border: 2px solid red;
 	min-height: 100vh;
+	overflow: hidden !important;
 }
 
 .homepage h1 {
@@ -17,7 +18,7 @@
 	opacity: 0;
 	height: 90%;
 	margin: 0 auto;
-	z-index: 1;
+	z-index: -1;
 	transform-style: preserve-3d;
 	animation: fadeIn 0.6s forwards;
 	animation-delay: 0.6s;
@@ -37,4 +38,26 @@
 	font-family: 'Space Mono', monospace;
 	font-weight: 700;
 	color: #dbdbdb;
+}
+
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden !important;
+		width: 100% !important;
+
+	}
+
+	html{
+		overflow-x: hidden !important;
+		width: 100% !important;
+	}
+
+	.homepage{
+		overflow-x: hidden !important;
+	}
+	.homepage__container{
+		overflow-x: hidden !important;
+	}
+	
 }
