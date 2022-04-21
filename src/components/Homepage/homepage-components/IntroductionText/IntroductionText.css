@@ -8,6 +8,35 @@
 	font-size: 4rem;
 }
 
+.introduction__dot{
+	display: inline-flex;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #672ae9;
+	margin-left: 3px;
+	margin-right: 3px;
+	box-shadow: 0 0 0 0 #672ae9;
+	animation: pulse-purple 2s infinite;
+}
+
+@keyframes pulse-purple {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #672ae9;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 22px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
 .introduction__is--span {
 	color: #672ae9;
 	font-size: 4rem;
