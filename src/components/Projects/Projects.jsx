@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import "./Projects.css";
-import { useEffect, useContext, useRef, useState} from "react";
+import { useEffect, useContext, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import ProjectIntroduction from "./project-components/ProjectIntroduction/ProjectIntroduction";
@@ -31,7 +31,6 @@ const Projects = () => {
 
     if (isClicked && projectWindowWidth > 767) {
       projectRefClass.remove("darken");
- 
     }
 
     return () => {
@@ -39,7 +38,7 @@ const Projects = () => {
     };
   }, [projectWindowWidth]);
 
-
+  // useEffect hook for animations and animation cleanup
   useEffect(() => {
     const ProjectIntroduction = gsap.from(".project-introduction", {
       scale: 0.5,
@@ -58,6 +57,11 @@ const Projects = () => {
       ProjectIntroduction.kill();
       projectList.kill();
     };
+  }, []);
+
+  // useEffect hook to always start from top when navigated to this page
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (

@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 
 const PurpleDude = () => {
- 
   const randomX = random(10, 30);
   const randomY = random(20, 40);
   const randomDelay = random(0, 1);
@@ -12,8 +11,12 @@ const PurpleDude = () => {
   const randomTime2 = random(5, 10);
   const randomAngle = random(8, 12);
 
-
   function rotate(target, direction) {
+    gsap.config({
+      nullTargetWarn: false,
+      trialWarn: false,
+    });
+
     gsap.to(target, randomTime2(), {
       rotation: randomAngle(direction),
       delay: randomDelay(),
@@ -47,15 +50,20 @@ const PurpleDude = () => {
   }
 
   useEffect(() => {
-		moveX(".purple-dude", 1);
-		moveY(".purple-dude", -1);
-		rotate('.purple-dude', 1);
-	}, []);
+    moveX(".purple-dude", 1);
+    moveY(".purple-dude", -1);
+    rotate(".purple-dude", 1);
+
+    return () => {
+      moveX(".purple-dude", 1);
+      moveY(".purple-dude", -1);
+      rotate(".purple-dude", 1);
+    };
+  }, []);
 
   return (
-
     <>
-      <img className='purple-dude' src="/images/dude-4.png" alt="" />
+      <img className="purple-dude" src="/images/dude-4.png" alt="" />
     </>
   );
 };

@@ -10,6 +10,7 @@
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.zen{
+		transition: all 0.8s ease;
 		height: 200px;
 		width: 200px;
 		position: absolute;
@@ -19,6 +20,7 @@
 
 @media only screen and (min-width: 667px) and (max-deve-width: 825px) {
 	.zen{
+		transition: all 0.8s ease;
 		top: calc(52%);
 		height: 350px;
 		width: 350px;
@@ -27,6 +29,7 @@
 
 @media screen and (max-width: 375px) {
 	.zen{
+		transition: all 0.8s ease;
 		height: 200px;
 		width: 200px;
 		top: calc(53%)

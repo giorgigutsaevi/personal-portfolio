@@ -1,5 +1,4 @@
 
-
 .purple-dude{
 	position: absolute;
 	top: calc(35%);
@@ -12,6 +11,7 @@
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.purple-dude{
 		position: absolute;
+		transition: all 0.8s ease;
 		top: calc(20%);
 		height: 200px;
 		width: 130px;
@@ -21,6 +21,7 @@
 @media only screen and (min-width: 667px) and (max-width: 825px) {
 	.purple-dude{
 		top: calc(32%);
+		transition: all 0.8s ease;
 		height: 350px;
 		width: 260px;
 	}
@@ -29,6 +30,7 @@
 @media only screen and (min-width: 667px) and (max-width: 825px) {
 	.purple-dude{
 		top: calc(37%);
+		transition: all 0.8s ease;
 		height: 350px;
 		width: 260px;
 	}
@@ -37,6 +39,7 @@
 @media screen and (max-width: 375px) {
 	.purple-dude{
 		width: 120px;
+		transition: all 0.8s ease;
 		height: 220px;
 		top: calc(35%);
 	}

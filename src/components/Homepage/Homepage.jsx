@@ -49,7 +49,6 @@ const Homepage = () => {
     };
   }, [windowWidth]);
 
-
   // useEffect hook for gsap animations
   useEffect(() => {
     const textAnimation = gsap.from(".introduction", {
@@ -141,6 +140,11 @@ const Homepage = () => {
       floatingAstronaut.kill();
       acknowledgementAnimation.kill();
     };
+  }, []);
+
+  // useEffect hook to always start from top when navigated to this page
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (
