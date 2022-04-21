@@ -33,10 +33,19 @@ const Projects = () => {
       projectRefClass.remove("darken");
     }
 
+    if (projectRefClass.contains("darken") && (window.innerWidth > 767)){
+      projectRefClass.remove("darken");
+    }
+
+    // So the user always starts from the top once navigated to Projects page
+    window.scrollTo(0, 0);
+    
+    // cleanup function
     return () => {
       window.removeEventListener("resize", updateProjectWindowWidth);
     };
   }, [projectWindowWidth]);
+
 
   // useEffect hook for animations and animation cleanup
   useEffect(() => {
@@ -57,11 +66,6 @@ const Projects = () => {
       ProjectIntroduction.kill();
       projectList.kill();
     };
-  }, []);
-
-  // useEffect hook to always start from top when navigated to this page
-  useEffect(() => {
-    window.scrollTo(0, 0);
   }, []);
 
   return (

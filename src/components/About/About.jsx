@@ -1,5 +1,9 @@
 import "./About.css";
 import { motion } from "framer-motion";
+import AboutIntroduction from "./about-components/AboutIntroduction/AboutIntroduction";
+import Skills from "./about-components/Skills/Skills";
+import Languages from "./about-components/AboutLanguages/Languages";
+import Interests from "./about-components/Interests/Interests";
 
 const About = () => {
   return (
@@ -9,7 +13,13 @@ const About = () => {
       transition={{ ease: "easeOut", duration: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h1 className="abouth1">About Page</h1>
+      <div className="about">
+        {/* <img className='about__portrait' src='/images/portrait2.JPG'/> */}
+        <AboutIntroduction/>
+        <Skills/>
+        <Languages/>
+        <Interests/>
+      </div>
     </motion.div>
   );
 };

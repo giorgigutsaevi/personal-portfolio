@@ -1,4 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-.abouth1{
-	color: snow;
+.about {
+	width: 100%;
+	will-change: contents;
+	min-height: 400px;
+	opacity: 0;
+	min-height: 100vh;
+	margin: 0 auto;
+	transform-style: preserve-3d;
+	animation: fadeIn 0.6s forwards;
+	animation-delay: 0.6s;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	position: relative;
+	font-family: 'Space Mono', monospace;
+	z-index: 0;
+	/* background-image: url(/public/images/portrait2.JPG);
+	background-position: left; */
+  /* background-size: 40%; */
+	/* background-size: 50vw 100vh; */
+	/* background-size: 50% 50%;
+	background-repeat: no-repeat; */
 }
+
+/* .about__portrait{
+	position: absolute;
+	left: 0;
+	width: 700px;
+	mix-blend-mode: soft-light;
+	z-index: -6;
+} */

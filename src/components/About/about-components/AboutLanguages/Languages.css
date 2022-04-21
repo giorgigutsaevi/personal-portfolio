@@ -1,0 +1,39 @@
+.languages {
+	width: 70%;
+	margin-bottom: 2em;
+}
+
+.languages__title--main {
+	padding: 10px;
+	color: #dbdbdb;
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+.languages__body--columns {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	
+}
+
+.languages__body--column{
+	color: #727474;
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: 10px;
+	margin-top: 10px;
+	width: 30%;
+	min-height: 12vh;
+}
+
+.languages__body--column span{
+	color: #672ae9;
+	font-style: italic;
+}
+
+.languages__body--column p{
+	font-size: 1.2rem;
+	font-weight: normal;
+}

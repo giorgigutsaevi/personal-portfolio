@@ -1,0 +1,37 @@
+.interests {
+	width: 70%;
+	margin-bottom: 10em;
+}
+
+.interests__title--main {
+	padding: 10px;
+	color: #dbdbdb;
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+.interests__body--columns {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+	
+}
+
+.interests__body--column{
+	color: #727474;
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: 10px;
+	margin-top: 10px;
+	width: 30%;
+}
+
+.interests__body--column p{
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.interests__kimchi{
+	color: #ED4B00 !important;
+}

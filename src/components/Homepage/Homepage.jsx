@@ -44,6 +44,14 @@ const Homepage = () => {
       containerClass.remove("darken");
     }
 
+    if(containerClass.contains('darken') && (window.innerWidth > 767)){
+      containerClass.remove("darken");
+    }
+
+    // So the user always starts from the top once navigated to Homepage
+    window.scrollTo(0, 0);
+
+    // cleanup function below
     return () => {
       window.removeEventListener("resize", updateWindowWidth);
     };
@@ -140,11 +148,6 @@ const Homepage = () => {
       floatingAstronaut.kill();
       acknowledgementAnimation.kill();
     };
-  }, []);
-
-  // useEffect hook to always start from top when navigated to this page
-  useEffect(() => {
-    window.scrollTo(0, 0);
   }, []);
 
   return (

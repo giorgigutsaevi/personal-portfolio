@@ -1,0 +1,27 @@
+.skills {
+	width: 70%;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+.skills__title--main {
+	padding: 10px;
+	color: #dbdbdb;
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+.skills__body--columns {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.skills__body--column {
+	color: #727474;
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: 10px;
+	width:40%;
+	min-height: 15vh;
+}
