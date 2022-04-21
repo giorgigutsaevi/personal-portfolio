@@ -22,7 +22,7 @@
 	font-size: 2em;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) {
 	.quote {
 		width: 90%;
 	}
@@ -36,7 +36,7 @@
 }
 
 
-@media only screen and (min-device-width: 667px) and (max-device-width: 825px) {
+@media only screen and (min-width: 667px) and (max-width: 825px) {
 	.quote {
 		width: 80%;
 	}

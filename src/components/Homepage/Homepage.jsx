@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import "./Homepage.css";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useContext } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,11 +16,39 @@ import ZenAnimation from "./homepage-components/ZenAnimation/ZenAnimation";
 import PurpleDude from "./homepage-components/PurpleDude/PurpleDude";
 import FloatingAstronaut from "./homepage-components/FloatingAstronaut/FloatingAstronaut";
 import Outro from "./homepage-components/Outro/Outro";
+import BlurContext from "../../context/BlurContext";
+import MenuContext from "../../context/MenuContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Homepage = () => {
-  const { ref: myRef, inView: isQuoteVisible } = useInView();
+  const { ref: myRef, inView: isQuoteVisible } = useInView(0);
+  const [windowWidth, setWindowWidth] = useState("");
+  let { isBlurred } = useContext(BlurContext);
+  const { isClicked } = useContext(MenuContext);
+  const containerRef = useRef(null);
+
+  // useEffect hook to remove blurriness, IF the burger menu is not clicked to hide it
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      const newWidth = window.innerWidth;
+      setWindowWidth(newWidth);
+    };
+
+    window.addEventListener("resize", updateWindowWidth);
+
+    const containerRefCurrent = containerRef.current;
+    const containerClass = containerRefCurrent.classList;
+
+    if (isClicked && windowWidth > 767) {
+      containerClass.remove("darken");
+    }
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
+  }, [windowWidth]);
+
 
   // useEffect hook for gsap animations
   useEffect(() => {
@@ -103,7 +132,7 @@ const Homepage = () => {
       },
     });
 
-    // Animation cleanup in useEffect
+    // Animation cleanup
     return () => {
       bootcampTextAnimation.kill();
       textAnimation.kill();
@@ -122,7 +151,12 @@ const Homepage = () => {
       transition={{ ease: "easeOut", duration: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="homepage__container">
+      <div
+        ref={containerRef}
+        className={
+          isBlurred ? "homepage__container darken" : "homepage__container"
+        }
+      >
         <IntroductionText />
         <BootcampText />
         <PurpleDude />

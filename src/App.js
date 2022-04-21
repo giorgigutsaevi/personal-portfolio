@@ -1,14 +1,20 @@
-import './App.css';
+import './App.css'; 
 import Header from "./components/Header/Header"
 import AnimatedRoutes from './components/AnimatedRoutes/AnimatedRoutes';
+import { BlurContextProvider } from "./context/BlurContext"
+import { MenuContextProvider } from "./context/MenuContext"
 
 const App = () => {
 
   return (
-    <div>
-      <Header/>
-      <AnimatedRoutes />
-    </div>
+    <MenuContextProvider>
+      <BlurContextProvider>
+        <div>
+          <Header />
+          <AnimatedRoutes />
+        </div>
+      </BlurContextProvider>
+    </MenuContextProvider>
   );
 }
 

@@ -12,6 +12,12 @@ const SnazzyOcto = () => {
   const randomAngle = random(8, 12);
 
   function rotate(target, direction) {
+
+    gsap.config({
+      nullTargetWarn: false,
+      trialWarn: false,
+    });
+    
     gsap.to(target, randomTime2(), {
       rotation: randomAngle(direction),
       delay: randomDelay(),
