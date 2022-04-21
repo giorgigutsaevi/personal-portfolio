@@ -152,4 +152,5 @@
 .active {
 	transition: all 0.8s ease-in-out;
 	transform: translateX(0%);
+	z-index: 1000;
 }

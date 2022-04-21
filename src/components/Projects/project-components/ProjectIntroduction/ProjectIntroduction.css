@@ -1,0 +1,115 @@
+.project-introduction {
+	overflow: hidden !important;
+	margin-top: 300px;
+	width: 60%;
+	padding: 1.5rem;
+}
+
+.project-introduction__title {
+	color: snow;
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+.project-introduction__selected {
+	color: #672ae9;
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+.project-introduction__list {
+	color: #727474;
+	font-size: 1.3rem;
+	margin-top: 5px;
+}
+
+.projectDot {
+	height: 10px;
+	display: inline-flex;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #dbdbdb;
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+	animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+
+@media (min-width:1184px) and (max-width:1240px) {
+
+	.project-introduction {
+		width: 80%;
+	}
+}
+
+
+@media (min-width:667px) and (max-width:1184px) {
+
+	.project-introduction {
+		width: 90%;
+	}
+
+	.project-introduction__selected {
+		font-size: 2rem !important;
+	}
+}
+
+/* @media screen and (min-width: 667px) and (max-width: 930px){
+
+} */
+
+@media screen and (max-width: 768px) {}
+
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+	.project-introduction {
+		width: 90%;
+	}
+
+	.project-introduction__title {
+		font-size: 2.7rem;
+
+	}
+
+	.project-introduction__selected {
+		font-size: 2.2rem;
+		display: block;
+		width: 300px;
+		word-wrap: break-word;
+	}
+
+	.project-introduction__list {
+		white-space: initial;
+		font-size: 1.3rem;
+	}
+
+
+	.projectDot {
+		height: 7px;
+		display: inline-flex;
+		width: 7px;
+		border-radius: 50%;
+		background-color: #dbdbdb;
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+		animation: pulse-white 2s infinite;
+	}
+
+}
+
+@media screen and (max-width: 375px) {}

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 .homepage {
-	border: 2px solid red;
 	min-height: 100vh;
 	overflow: hidden !important;
 }
@@ -11,7 +10,6 @@
 }
 
 .homepage__container {
-	border: 2px solid green;
 	width: 100%;
 	will-change: contents;
 	min-height: 400px;
@@ -40,7 +38,6 @@
 	color: #dbdbdb;
 }
 
-
 @media screen and (max-width: 768px) {
 	body {
 		overflow-x: hidden !important;
@@ -48,16 +45,17 @@
 
 	}
 
-	html{
+	html {
 		overflow-x: hidden !important;
 		width: 100% !important;
 	}
 
-	.homepage{
+	.homepage {
 		overflow-x: hidden !important;
 	}
-	.homepage__container{
+
+	.homepage__container {
 		overflow-x: hidden !important;
 	}
-	
+
 }
