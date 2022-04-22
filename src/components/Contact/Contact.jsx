@@ -17,12 +17,12 @@ const Contact = () => {
     const contactIntroduction = gsap.from(".contact-introduction", {
       opacity: 0,
       duration: 2.5,
-      x: -300,
+      y: -300,
     });
 
     const formAnimation = gsap.from(".contactForm__container ", {
       duration: 2.2,
-      y: 300,
+      x: -300,
     });
 
     const informationBoxAnimation = gsap.from(".contactForm__infobox", {
