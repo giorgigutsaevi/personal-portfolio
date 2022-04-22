@@ -16,9 +16,10 @@ import ZenAnimation from "./homepage-components/ZenAnimation/ZenAnimation";
 import PurpleDude from "./homepage-components/PurpleDude/PurpleDude";
 import FloatingAstronaut from "./homepage-components/FloatingAstronaut/FloatingAstronaut";
 import Outro from "./homepage-components/Outro/Outro";
+import AtomicRocket from "./homepage-components/AtomicRocket/AtomicRocket";
+
 import BlurContext from "../../context/BlurContext";
 import MenuContext from "../../context/MenuContext";
-import AtomicMonk from "./homepage-components/AtomicRocket/AtomicRocket";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -166,7 +167,7 @@ const Homepage = () => {
         }
       >
         <IntroductionText />
-        <AtomicMonk/>
+        <AtomicRocket/>
         <BootcampText />
         <PurpleDude />
         <LoveLetter />

@@ -1,4 +1,5 @@
 import "./AboutIntroduction.css";
+import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
@@ -44,7 +45,9 @@ const AboutIntroduction = () => {
         <div className="about__download">
           Download my{" "}
           <button className="about__resume--button">
-            resume <CloudDownloadIcon />
+            <Link className='about__resume--link' to="/files/Giorgi_Gutsaev_CV.pdf" target="_blank" download>
+              resume <CloudDownloadIcon />
+            </Link>
           </button>
         </div>
       </div>
