@@ -11,7 +11,7 @@ const Mentions = () => {
       <div className="mentions__list">
         <p className="mentions__codeSymb">&#10096; &#10097;</p>
         <h3 className="mentions__comment">// Made with</h3>
-        <h5>React.js</h5>
+        <h5>React.JS</h5>
         <h5>GSAP</h5>
         <h5>ScrollTrigger</h5>
         <h5>FramerMotion</h5>

@@ -14,7 +14,6 @@
 .skills__body--columns {
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 .skills__body--column {
@@ -24,4 +23,30 @@
 	padding: 10px;
 	width:40%;
 	min-height: 15vh;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px){
+	.skills{
+		width: 90%;
+	}
+
+	.skills__title--main{
+		text-align: center;
+	}
+
+	.skills__body--columns{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.skills__body--column{
+		font-size: 0.9em;
+		margin: auto;
+		width: 90%;
+		white-space: initial;
+		font-size: 1.1rem;
+		text-align: center;
+		margin-top: 10px;
+	}
 }

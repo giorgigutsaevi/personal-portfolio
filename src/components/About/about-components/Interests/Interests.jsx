@@ -10,10 +10,10 @@ const Interests = () => {
 					Making <span className="interests__kimchi">Kimchi</span>
         </div>
         <div className="interests__body--column">
-					Video games, Vinyl records
+					<p>Video games, Vinyl records</p>
         </div>
 				<div className="interests__body--column">
-					Geeking out
+					<p>Geeking out</p>
         </div>
       </div>
     </div>

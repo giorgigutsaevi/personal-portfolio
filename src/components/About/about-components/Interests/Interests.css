@@ -15,10 +15,10 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	align-content: flex-start;
-	
+
 }
 
-.interests__body--column{
+.interests__body--column {
 	color: #727474;
 	font-size: 1.1rem;
 	font-weight: 700;
@@ -27,11 +27,38 @@
 	width: 30%;
 }
 
-.interests__body--column p{
+.interests__body--column p {
 	font-size: 1.2rem;
 	font-weight: normal;
 }
 
-.interests__kimchi{
+.interests__kimchi {
 	color: #ED4B00 !important;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.interests {
+		width: 90%;
+	}
+
+	.interests__body--columns {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.interests__body--column {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+
+	.interests__title--main {
+		white-space: initial;
+		font-size: 1.4rem;
+		margin-top: 5px;
+		text-align: center;
+	}
 }

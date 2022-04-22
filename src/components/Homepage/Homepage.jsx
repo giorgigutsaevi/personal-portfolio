@@ -18,6 +18,7 @@ import FloatingAstronaut from "./homepage-components/FloatingAstronaut/FloatingA
 import Outro from "./homepage-components/Outro/Outro";
 import BlurContext from "../../context/BlurContext";
 import MenuContext from "../../context/MenuContext";
+import AtomicMonk from "./homepage-components/AtomicRocket/AtomicRocket";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,7 +45,7 @@ const Homepage = () => {
       containerClass.remove("darken");
     }
 
-    if(containerClass.contains('darken') && (window.innerWidth > 767)){
+    if (containerClass.contains("darken") && window.innerWidth > 767) {
       containerClass.remove("darken");
     }
 
@@ -165,6 +166,7 @@ const Homepage = () => {
         }
       >
         <IntroductionText />
+        <AtomicMonk/>
         <BootcampText />
         <PurpleDude />
         <LoveLetter />
