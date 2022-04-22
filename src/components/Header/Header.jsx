@@ -62,6 +62,11 @@ const Header = () => {
     };
   }, [windowWidth]);
 
+
+  const handleMail = () => {
+    window.open('mailto:giorgi.gutsaev@gmail.com?subject=Subject&body=Body%20goes%20here')
+  }
+
   return (
     <nav className={scrolled ? "header scrolled" : "header"}>
       <div className="header__chosen--link">{selectedNav}</div>
@@ -86,6 +91,8 @@ const Header = () => {
           onClick={handleNavClick}
           className="header__link"
           to="/contact"
+          // onClick={handleMail}
+          // to='#'
         >
           .contact()
         </NavLink>

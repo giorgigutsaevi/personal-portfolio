@@ -1,0 +1,80 @@
+.contact-introduction {
+	overflow: hidden !important;
+	margin-top: 300px;
+	width: 60%;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid pink;
+}
+
+
+.contact-introduction__title {
+	color: snow;
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+.contactDot {
+	height: 10px;
+	display: inline-flex;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #dbdbdb;
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+	animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+.contact-introduction__selected {
+	color: #672ae9;
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+.contact__work{
+	color: #727474;
+	font-size: 1.6em;
+	font-weight: 700;
+}
+
+
+
+@media only screen and (min-width: 915px) and (max-width: 1184px) {
+
+	
+}
+
+@media only screen and (min-width: 667px) and (max-width: 915px) {
+
+	
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+	
+
+
+}
+
+@media screen and (max-width: 375px) {
+	
+}
