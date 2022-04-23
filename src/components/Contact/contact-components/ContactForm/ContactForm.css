@@ -332,8 +332,6 @@ textarea:focus, input:focus {
 	font-weight: 700;
 }
 
-
-
 @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {
 		-webkit-transform: translateY(0);
