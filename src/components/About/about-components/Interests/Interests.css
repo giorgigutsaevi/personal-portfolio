@@ -62,3 +62,18 @@
 		text-align: center;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.interests {
+		width: 90%;
+	}
+
+	.interests__body--columns {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.interests__body--column{
+		width: 100%;
+	}
+}

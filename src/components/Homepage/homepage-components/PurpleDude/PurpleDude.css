@@ -8,13 +8,17 @@
 	width: 340px;
 }
 
+.purple__dude--link{
+	cursor: auto;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.purple-dude{
 		position: absolute;
 		transition: all 0.8s ease;
 		top: calc(20%);
 		height: 200px;
-		width: 130px;
+		width: 145px;
 	}
 }
 
@@ -38,9 +42,9 @@
 
 @media screen and (max-width: 375px) {
 	.purple-dude{
-		width: 120px;
+		width: 140px;
 		transition: all 0.8s ease;
-		height: 220px;
+		height: 200px;
 		top: calc(35%);
 	}
 }

@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 
 const ZenAnimation = () => {
- 
   const randomX = random(10, 30);
   const randomY = random(20, 40);
   const randomDelay = random(0, 1);
@@ -12,9 +11,7 @@ const ZenAnimation = () => {
   const randomTime2 = random(5, 10);
   const randomAngle = random(8, 12);
 
-
   function rotate(target, direction) {
-
     gsap.config({
       nullTargetWarn: false,
       trialWarn: false,
@@ -53,21 +50,28 @@ const ZenAnimation = () => {
   }
 
   useEffect(() => {
-		moveX(".zen", 1);
-		moveY(".zen", -1);
-		rotate('.zen', 1);
+    moveX(".zen", 1);
+    moveY(".zen", -1);
+    rotate(".zen", 1);
 
     return () => {
       moveX(".zen", 1);
       moveY(".zen", -1);
-      rotate('.zen', 1);
-    }
-	}, []);
+      rotate(".zen", 1);
+    };
+  }, []);
 
   return (
-
     <>
-      <img className='zen' src="/images/flame-meditation.png" alt="" />
+      {" "}
+      <a 
+      href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="zen__link"
+      >
+        <img className="zen" src="/images/flame-meditation.png" alt="" />
+      </a>
     </>
   );
 };

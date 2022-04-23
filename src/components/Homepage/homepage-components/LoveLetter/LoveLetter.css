@@ -26,6 +26,13 @@
 	color: #dbdbdb;
 }
 
+
+@media only screen and (min-width: 667px) and (max-width: 915px){
+	.loveLetter {
+		width: 60%
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.loveLetter {
 		width: 80%

@@ -16,8 +16,19 @@ const Mentions = () => {
         <h5>ScrollTrigger</h5>
         <h5>FramerMotion</h5>
         <h5>React Intersection Observer API</h5>
-        <h5 className='acknowledgement'>Special thanks to</h5>
-        <h4>Icons 8 from Ouch!</h4>
+        <h5 className="acknowledgement">Special thanks to</h5>
+        <h4>
+          Icons 8 from{" "}
+          <a
+            className="ouch__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://icons8.com/illustrations"
+          >
+            Ouch
+          </a>
+          !
+        </h4>
       </div>
     </div>
   );

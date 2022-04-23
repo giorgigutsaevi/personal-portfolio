@@ -1,0 +1,54 @@
+
+.atomic-student{
+	height: 340px;
+	width: 300px;
+	position: absolute;
+	top: calc(50%);
+	left: 5%;
+	z-index: -1;
+}
+
+.atomic-student--link{
+	cursor: auto;
+}
+
+@media only screen and (min-width: 667px) and (max-width: 924px) {
+	.atomic-student{
+		height: 180px;
+		width: 150px;
+		position: absolute;
+		transition: all 0.8s ease;
+
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.atomic-student{
+		top: 5%;
+		height: 180px;
+		width: 150px;
+		position: absolute;
+		transition: all 0.8s ease;
+
+	}
+}
+
+@media only screen and (min-width: 667px) and (max-width: 825px) {
+	.atomic-student{
+		transition: all 0.8s ease;
+		top: 5%;
+		height: 240px;
+		width: 200px;
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.atomic-student{
+		top: 5%;
+		height: 180px;
+		width: 150px;
+		position: absolute;
+		transition: all 0.8s ease;
+	}
+}

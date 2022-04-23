@@ -63,7 +63,14 @@ const PurpleDude = () => {
 
   return (
     <>
-      <img className="purple-dude" src="/images/dude-4.png" alt="" />
+      <a
+        href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="purple__dude--link"
+      >
+        <img className="purple-dude" src="/images/dude-4.png" alt="" />
+      </a>
     </>
   );
 };

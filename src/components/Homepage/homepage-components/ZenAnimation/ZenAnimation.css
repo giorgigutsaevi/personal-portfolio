@@ -8,6 +8,19 @@
 	z-index: -1;
 }
 
+.zen__link{
+	cursor: auto;
+}
+
+@media only screen and (min-width: 667px) and (max-width: 915px){
+	.zen{
+		transition: all 0.8s ease;
+		height: 350px;
+		width: 350px;
+		position: absolute;
+	}
+}
+
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.zen{
 		transition: all 0.8s ease;
@@ -18,12 +31,12 @@
 	}
 }
 
-@media only screen and (min-width: 667px) and (max-deve-width: 825px) {
+@media only screen and (min-width: 667px) and (max-width: 825px) {
 	.zen{
 		transition: all 0.8s ease;
-		top: calc(52%);
-		height: 350px;
-		width: 350px;
+		top: calc(54%);
+		height: 320px;
+		width: 320px;
 	}
 }
 

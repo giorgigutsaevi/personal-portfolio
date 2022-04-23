@@ -14,10 +14,18 @@
 
 .bootcampText__line1{
 	color: #dbdbdb;
+	margin-bottom: 10px;
 }
 
 .bootcampText__line2{
 	color: #dbdbdb;
+	margin-top: 10px;
+}
+
+@media only screen and (min-width: 667px) and (max-width: 915px){
+	.bootcampText{
+		width: 60%;
+	}
 }
 
 @media screen and (max-width: 768px) {

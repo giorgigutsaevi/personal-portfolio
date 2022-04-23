@@ -81,3 +81,18 @@
 	}	
 }
 
+@media screen and (max-width: 375px) {
+	.languages {
+		width: 90%;
+	}
+
+	.languages__body--columns{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.languages__body--column{
+		font-size: 1rem;
+		width: 100%;
+	}
+}

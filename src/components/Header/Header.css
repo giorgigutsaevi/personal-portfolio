@@ -78,7 +78,6 @@
 	body {
 		overflow-x: hidden !important;
 	}
-
 	.header__navlinks {
 		width: 70%;
 	}
@@ -123,7 +122,7 @@
 	}
 
 	.header__link {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	.burgermenu {

@@ -1,4 +1,6 @@
 import "./ContactForm.css";
+import { Link } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 import SendIcon from "@mui/icons-material/Send";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
@@ -8,19 +10,30 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { BsMedium } from "react-icons/bs";
 
-import { Link } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import emailjs from "@emailjs/browser"
 
 const ContactForm = () => {
+
+	const refForm = useRef()
+
   const handleEmailClick = () => {
     window.open(
       "mailto:giorgi.gutsaev@gmail.com?subject=Subject&body=Body%20goes%20here"
     );
   };
 
+	const sendMail = (e) => {
+		e.preventDefault();
+		emailjs
+		.sendForm(
+			'gmail',
+			''
+		)
+	}
+
   return (
     <div className="contactForm">
-      <form className="contactForm__container">
+      <form ref={refForm} className="contactForm__container" onSubmit={sendMail}>
         <label className="name__field contactForm__label" htmlFor="name">
           <input
             type="text"

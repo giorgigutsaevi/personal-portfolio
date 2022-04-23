@@ -169,7 +169,7 @@
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 
 	.about-introduction {
-		width: 90%;
+		width: 85%;
 	}
 
 	.about-introduction__heading {
@@ -219,16 +219,55 @@
 		width: 90%;
 	}
 
-	.about-introduction__name {
-		font-size: 2.2rem;
+	.about-introduction__heading{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	.about-introduction__is--span {
+	.about-introduction__title {
 		font-size: 2.2rem;
+		width: 60%;
+	}
+	.aboutDot{
+		height: 8px;
+		display: inline-block !important;
+		width: 8px;
+		border-radius: 50%;
+		background-color: #dbdbdb;
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+		animation: pulse-white 2s infinite;
 	}
 
-	.about-introduction__dev--span {
+	.about-introduction__selected{
+		font-size: 2rem;
+		width: 240px;
+		word-wrap: break-word;
+	}
+
+	.about__icons__wrapper{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.icon-container{
+		width: 100%;
+	}
+	.about__download{
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+		width: 100%;
+		text-align: center;
+	}
+	.about__resume--button{
+		width: 70%;
+		align-self: center;
+		margin-top: 20px;
+	}
+
+	.about__brief p{
 		font-size: 1rem;
-		width: 20%;
+		text-align: center;
 	}
 }

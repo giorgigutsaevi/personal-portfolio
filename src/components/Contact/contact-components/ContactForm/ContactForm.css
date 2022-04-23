@@ -213,8 +213,8 @@ textarea:focus, input:focus {
 	color: #727474;
 	font-size: 1.2em;
 	font-weight: 700;
-
 }
+
 
 .contactForm__infobox--details p {
 	margin-top: 1em;
@@ -222,6 +222,7 @@ textarea:focus, input:focus {
 	font-size: 1.1em;
 	font-weight: 700;
 }
+
 
 .contactForm__infobox--socials {
 	margin-top: 3em;
@@ -236,7 +237,6 @@ textarea:focus, input:focus {
 	font-size: 1.3em;
 	font-weight: 700;
 }
-
 
 .location-container img {
 	width: 35px;
@@ -308,7 +308,7 @@ textarea:focus, input:focus {
 }
 
 .socials__wrapper{
-	padding: 30px;
+	padding: 17px;
 	width: 100%;
 }
 
@@ -325,6 +325,13 @@ textarea:focus, input:focus {
 	color: #ED4B00;
 	cursor: pointer;
 }
+
+.infobox__small{
+	color: #727474 !important;
+	font-size: 1.3em !important;
+	font-weight: 700;
+}
+
 
 
 @keyframes bounce {
@@ -447,7 +454,7 @@ textarea:focus, input:focus {
 	}
 
 	.contactForm__button {
-		width: 50%;
+		width: 60%;
 	}
 
 
@@ -461,7 +468,39 @@ textarea:focus, input:focus {
 	}
 
 	.contactForm__container {
-		width: auto;
+		width: 100%;
+	}
+
+	.subject__field .contactForm__input {
+		min-width: 100px;
+	}
+
+	.email__field .contactForm__input {
+		min-width: 100px;
+	}
+
+	.name__field .contactForm__input {
+		min-width: 100px;
+	}
+
+	.message__field {
+		width: 90%;
+	}
+
+	.message__label{
+		min-width: 220px;
+	}
+
+	.contactForm__button {
+		width: 80%;
+	}
+
+	.contactForm__infobox--details{
+		width: 100%;
+	}
+
+	.email-container p, .phone-container p, .location-container p{
+		font-size: 0.9em;
 	}
 
 	.contactForm__infobox {
@@ -481,6 +520,5 @@ textarea:focus, input:focus {
 
 	.contactForm__infobox--details small {
 		text-align: center;
-
 	}
 }

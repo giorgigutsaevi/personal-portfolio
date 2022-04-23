@@ -9,8 +9,9 @@ const AboutIntroduction = () => {
   return (
     <div className="about-introduction">
       <h1 className="about-introduction__heading">
-        <div className="aboutDot"></div>
-        <span className="about-introduction__title">about</span>
+        <span className="about-introduction__title">
+          <div className="aboutDot"></div>about
+        </span>
         <span className="about-introduction__selected">('selected')</span>
         <br />
       </h1>
@@ -45,7 +46,12 @@ const AboutIntroduction = () => {
         <div className="about__download">
           Download my{" "}
           <button className="about__resume--button">
-            <Link className='about__resume--link' to="/files/Giorgi_Gutsaev_CV.pdf" target="_blank" download>
+            <Link
+              className="about__resume--link"
+              to="/files/Giorgi_Gutsaev_CV.pdf"
+              target="_blank"
+              download
+            >
               resume <CloudDownloadIcon />
             </Link>
           </button>

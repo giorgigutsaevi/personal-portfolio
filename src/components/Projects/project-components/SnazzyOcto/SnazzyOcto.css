@@ -6,6 +6,10 @@
 	width: 300px;
 }
 
+.snazzy-octo--link{
+	cursor: auto;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.snazzy-octo{
 		position: absolute;
@@ -32,8 +36,8 @@
 
 @media screen and (max-width: 375px) {
 	.snazzy-octo{
-		width: 200px;
-		height: 200px;
-		top: 3%;
+		width: 180px;
+		height: 180px;
+		top: 2%;
 	}
 }

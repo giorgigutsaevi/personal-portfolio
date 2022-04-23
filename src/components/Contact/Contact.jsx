@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import MenuContext from "../../context/MenuContext";
 import BlurContext from "../../context/BlurContext";
+import Paperplane from "./contact-components/AtomicStudent/AtomicStudent";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,6 +47,7 @@ const Contact = () => {
     >
       <div className="contact">
         <ContactIntroduction />
+        <Paperplane/>
         <ContactForm />
       </div>
     </motion.div>

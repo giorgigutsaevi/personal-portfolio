@@ -32,11 +32,13 @@
 	color: #dbdbdb;
 	font-size: 1.4rem;
 	font-weight: 700;
+	margin-top: 10px;
 }
 
 .projectItem__stack {
 	color: #727474;
 	font-size: 1.2rem;
+	margin-top: 7px;
 }
 
 .stack__list {
@@ -61,20 +63,18 @@
 }
 
 
-@media (min-width:667px) and (max-width:1184px) {
-
-}
+@media (min-width:667px) and (max-width:1184px) {}
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.projectItem__wraper {
+		width: 95%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
 	}
 
 	.projectItem__body {
-		width: 80%;
+		width: 100%;
 		margin: auto;
 	}
 
@@ -87,7 +87,6 @@
 	.projectItem__description {
 		font-size: 1.2rem;
 		white-space: initial;
-		
 	}
 
 	.projectItem__stack {
@@ -95,6 +94,22 @@
 		white-space: initial;
 
 	}
+	.projectItem__title {
+		font-size: 2.2rem;
+		white-space: initial;
+		text-align: center;
+	}
+
+	.projectItem__description {
+		font-size: 1.2rem;
+		white-space: initial;
+		text-align: center;
+	}
+
+	.projectItem__stack{
+		text-align: center;
+	}
+
 
 	.stack__list {
 		font-size: 1.2rem;
@@ -102,4 +117,41 @@
 	}
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+	.projectItem__wraper {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.projectItem__body {
+		width: 100%;
+		margin: auto;
+	}
+
+	.projectItem__body {
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.projectItem__title {
+		font-size: 2.5rem;
+		white-space: initial;
+		text-align: center;
+	}
+
+	.projectItem__description {
+		font-size: 1.2rem;
+		white-space: initial;
+		text-align: center;
+	}
+
+	.projectItem__stack{
+		text-align: center;
+	}
+
+	.stack__list {
+		font-size: 1.3rem;
+		white-space: initial;
+	}
+}

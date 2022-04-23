@@ -21,26 +21,26 @@
 	font-size: 1.1rem;
 	font-weight: 700;
 	padding: 10px;
-	width:40%;
+	width: 40%;
 	min-height: 15vh;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 667px){
-	.skills{
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.skills {
 		width: 90%;
 	}
 
-	.skills__title--main{
+	.skills__title--main {
 		text-align: center;
 	}
 
-	.skills__body--columns{
+	.skills__body--columns {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
 
-	.skills__body--column{
+	.skills__body--column {
 		font-size: 0.9em;
 		margin: auto;
 		width: 90%;
@@ -48,5 +48,31 @@
 		font-size: 1.1rem;
 		text-align: center;
 		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.skills {
+		width: 90%;
+	}
+
+	.skills__title--main {
+		text-align: center;
+	}
+
+	.skills__body--columns {
+		display: flex;
+	}
+
+	.skills__body--column {
+		font-size: 1rem;
+	}
+
+	.column2 {
+		margin-left: 25px;
+	}
+
+	.column4 {
+		margin-left: 20px;
 	}
 }

@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import "./UFO.css";
+import "./AtomicStudent.css";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 
-const UFO = () => {
+const AtomicStudent = () => {
   const randomX = random(10, 30);
   const randomY = random(20, 40);
   const randomDelay = random(0, 1);
@@ -50,29 +50,30 @@ const UFO = () => {
   }
 
   useEffect(() => {
-    moveX(".ufo", 1);
-    moveY(".ufo", -1);
-    rotate(".ufo", 1);
+    moveX(".atomic-student", 1);
+    moveY(".atomic-student", -1);
+    rotate(".atomic-student", 1);
 
     return () => {
-      moveX(".ufo", 1);
-      moveY(".ufo", -1);
-      rotate(".ufo", 1);
+      moveX(".atomic-student", 1);
+      moveY(".atomic-student", -1);
+      rotate(".atomic-student", 1);
     };
   }, []);
 
   return (
     <>
-      <a
-        href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
-        target="_blank"
-        className="ufo__link"
-        rel="noopener noreferrer"
+      <a 
+      href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
+      target="_blank"
+      className="atomic-student--link"
+      rel="noopener noreferrer"
+
       >
-        <img className="ufo" src="/images/polar-ufo.gif" alt="" />
+        <img className="atomic-student" src="/images/atomic.png" alt="" />
       </a>
     </>
   );
 };
 
-export default UFO;
+export default AtomicStudent;
