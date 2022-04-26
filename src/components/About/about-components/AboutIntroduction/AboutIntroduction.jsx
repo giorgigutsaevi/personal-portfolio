@@ -55,7 +55,7 @@ const AboutIntroduction = () => {
               target="_blank"
               download
             >
-              resume <CloudDownloadIcon />
+              Resumé <CloudDownloadIcon />
             </Link>
           </button>
         </div>
