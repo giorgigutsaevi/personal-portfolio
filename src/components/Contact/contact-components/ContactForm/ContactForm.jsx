@@ -37,7 +37,7 @@ const ContactForm = () => {
           console.log(result.text);
           toast.success("Email Sent", {
             icon: "🚀",
-            position: "top-right",
+            position: "bottom-left",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
