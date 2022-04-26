@@ -2,7 +2,7 @@ import "./IntroductionText.css"
 
 const IntroductionText = () => {
   return (
-    <div className="introduction">
+    <div className="introduction" data-testid='introduction-div'>
       <h1>
         <span className="introduction__name">giorgi</span><div className="introduction__dot"></div><span className="introduction__is--span">is()</span>
         <br />

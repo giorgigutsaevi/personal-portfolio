@@ -4,7 +4,7 @@ import "./Quote.css"
 const Quote = (props) => {
 
   return (
-    <div className="quote" ref={props.innerRef}>
+    <div className="quote" data-testid='quote' ref={props.innerRef}>
       <h2> <span>&lt;</span>quote wrapper<span>&gt;</span></h2>
       <p className="quote__comment">// words I try to live by</p>
       <br />

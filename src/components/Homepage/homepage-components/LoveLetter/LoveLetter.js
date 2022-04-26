@@ -2,7 +2,7 @@ import "./LoveLetter.css"
 
 const LoveLetter = () => {
   return (
-    <div className="loveLetter">
+    <div className="loveLetter" data-testid='loveLetter'>
       <p className="loveLetter__line1">
         I fell in love with <span className="loveLetter__coding">coding.</span>
       </p>
