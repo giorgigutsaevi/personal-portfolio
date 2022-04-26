@@ -1,6 +1,6 @@
 .contact-introduction {
 	overflow: hidden !important;
-	margin-top: 300px;
+	margin-top: 200px;
 	width: 50%;
 	padding: 1.5rem;
 	display: flex;
@@ -55,8 +55,8 @@
 }
 
 @media only screen and (min-width: 1650px) and (max-width: 1900px) {
-	.contact-introduction {
-	}
+	/* .contact-introduction {
+	} */
 }
 
 @media only screen and (min-width: 1184px) and (max-width: 1650px) {

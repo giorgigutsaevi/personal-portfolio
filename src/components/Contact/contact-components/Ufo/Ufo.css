@@ -1,0 +1,12 @@
+.contact-ufo{
+	position: absolute;
+	top: calc(5%);
+	left: 5%;
+	z-index: -1;
+	height: 200px;
+	width: 200px;
+}
+
+.ufo__link{
+	cursor: auto;
+}

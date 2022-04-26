@@ -4,13 +4,12 @@ import { useEffect, useState, useContext, useRef } from "react";
 import { motion } from "framer-motion";
 import ContactIntroduction from "./contact-components/ContactIntroduction/ContactIntroduction";
 import ContactForm from "./contact-components/ContactForm/ContactForm";
-import AtomicStudent from "./contact-components/AtomicStudent/AtomicStudent";
+import Ufo from "./contact-components/Ufo/Ufo";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import MenuContext from "../../context/MenuContext";
 import BlurContext from "../../context/BlurContext";
-import Ufo from "./Ufo/Ufo";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,7 +86,6 @@ const Contact = () => {
       >
         <ContactIntroduction />
         <Ufo/>
-        {/* <AtomicStudent /> */}
         <ContactForm />
       </div>
     </motion.div>

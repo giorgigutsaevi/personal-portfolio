@@ -1,6 +1,6 @@
 import "./ContactForm.css";
 import { Link } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 import SendIcon from "@mui/icons-material/Send";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
