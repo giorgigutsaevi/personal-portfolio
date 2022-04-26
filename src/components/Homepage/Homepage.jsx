@@ -73,7 +73,7 @@ const Homepage = () => {
       opacity: 0,
       scale: 1,
       ease: "ease-in",
-      y: 350,
+      y: 300,
       scrollTrigger: {
         trigger: ".bootcampText",
         scrub: true,
