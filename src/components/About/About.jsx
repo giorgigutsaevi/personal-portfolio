@@ -5,7 +5,6 @@ import AboutIntroduction from "./about-components/AboutIntroduction/AboutIntrodu
 import Skills from "./about-components/Skills/Skills";
 import Languages from "./about-components/AboutLanguages/Languages";
 import Interests from "./about-components/Interests/Interests";
-import UFO from "./about-components/UFO/UFO";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
