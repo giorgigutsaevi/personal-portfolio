@@ -17,3 +17,11 @@
 	font-family: 'Space Mono', monospace;
 	z-index: 0;
 }
+
+/* .portrait{
+	position: absolute;
+	z-index: -10000;
+	width: 100%;
+	right: -39%;
+	opacity: 0.8;	
+} */

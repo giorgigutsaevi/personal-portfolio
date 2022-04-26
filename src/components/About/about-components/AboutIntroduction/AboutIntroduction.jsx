@@ -7,7 +7,10 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 const AboutIntroduction = () => {
   return (
+    
     <div className="about-introduction">
+      <div>
+      </div>
       <h1 className="about-introduction__heading">
         <span className="about-introduction__title">
           <div className="aboutDot"></div>about

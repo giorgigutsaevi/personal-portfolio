@@ -1,9 +1,24 @@
+
 .contactForm {
 	width: 50%;
 	margin-top: 2em;
 	display: flex;
 	justify-content: space-between;
 	min-height: 70vh;
+}
+
+.toastBody {
+	font-family: 'Space Mono', monospace;
+  color: #dbdbdb;
+  font-size: 1rem !important;
+	font-weight: 700;
+}
+.toastProgress {
+  background: #672ae9 !important;
+}
+
+.toastContainer{
+	background-color: #0e1212;
 }
 
 .contactForm__container {
@@ -299,8 +314,6 @@ textarea:focus, input:focus {
 	align-items: center;
 }
 
-
-
 .socials__icon{
 	color: #672ae9;
 	margin-right: 12px;
@@ -459,6 +472,7 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 375px) {
+
 	.contactForm {
 		width: 90%;
 		display: flex;

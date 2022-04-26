@@ -9,12 +9,12 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { BsMedium } from "react-icons/bs";
-
-import emailjs from "@emailjs/browser"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-
-	const refForm = useRef()
+  const refForm = useRef();
 
   const handleEmailClick = () => {
     window.open(
@@ -22,24 +22,58 @@ const ContactForm = () => {
     );
   };
 
-	const sendMail = (e) => {
-		e.preventDefault();
-		emailjs
-		.sendForm(
-			'gmail',
-			''
-		)
-	}
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_h4cc5y9",
+        "template_14uoo5o",
+        refForm.current,
+        "RkXiEfbxQAwrjiH4P"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Email Sent", {
+            icon: "🚀",
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            draggable: true,
+            progress: undefined,
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <div className="contactForm">
-      <form ref={refForm} className="contactForm__container" onSubmit={sendMail}>
+      <ToastContainer
+        autoClose={3000}
+        theme="theme"
+        draggable={false}
+        toastClassName='toastContainer'
+        progressClassName="toastProgress"
+        bodyClassName="toastBody"
+      />
+      <form
+        ref={refForm}
+        className="contactForm__container"
+        onSubmit={sendEmail}
+      >
         <label className="name__field contactForm__label" htmlFor="name">
           <input
             type="text"
             id="name"
             className="contactForm__input"
             required
+            name="name"
           />
           <span className="name__placeholder">your name</span>
         </label>
@@ -49,6 +83,7 @@ const ContactForm = () => {
             type="email"
             id="email"
             className="contactForm__input"
+            name="email"
             required
           />
           <span className="email__placeholder">your email</span>
@@ -58,6 +93,7 @@ const ContactForm = () => {
           <input
             type="text"
             id="subject"
+            name="subject"
             className="contactForm__input"
             required
           />
@@ -70,6 +106,7 @@ const ContactForm = () => {
         <textarea
           className="message__field"
           id="message"
+          name="message"
           cols="27"
           rows="7"
           placeholder="“When the son of the deposed king of Nigeria emails you directly, asking for help, you help! His father ran the freaking country! Okay?” - Michael Scott"

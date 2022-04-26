@@ -92,10 +92,8 @@ const About = () => {
       transition={{ ease: "easeOut", duration: 1 }}
       exit={{ opacity: 0 }}
     >
-      {/* className="about" */}
-      <div ref={aboutRef} 
-      className={isBlurred ? "about darken" : "about"}
-      >
+      <div ref={aboutRef} className={isBlurred ? "about darken" : "about"}>
+        {/* <img src="/images/portrait1.jpg" alt="" className="portrait" /> */}
         <UFO />
         <AboutIntroduction />
         <Skills />
