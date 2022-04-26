@@ -4,19 +4,26 @@ const ProjectItem = ({ projectName, projectDescription, stack, link }) => {
   return (
     <div className="projectItem">
       <div className="projectItem__wraper">
-        <img
-          className="projectItem__image"
-          src="/images/purr-box.png"
-          alt="project-img"
-        />
+        <a
+          className="projectItem__box"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`${link}`}
+        >
+          <img
+            className="projectItem__image"
+            src="/images/purr-box.png"
+            alt="project-img"
+          />
+        </a>
         <div className="projectItem__body">
-				<a
+          <a
             className="projectItem__link"
             target="_blank"
             rel="noopener noreferrer"
             href={`${link}`}
           >
-              <h2 className="projectItem__title">{projectName}</h2>
+            <h2 className="projectItem__title">{projectName}</h2>
           </a>
           <h5 className="projectItem__description">{projectDescription}</h5>
           <h6 className="projectItem__stack">

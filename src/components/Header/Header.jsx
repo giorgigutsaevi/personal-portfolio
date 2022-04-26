@@ -30,6 +30,12 @@ const Header = () => {
     setIsClicked((prevClickState) => !prevClickState);
   };
 
+  const handleNavigationClick = () => {
+    handleNavClick();
+    setIsClicked((prevClickState) => !prevClickState);
+    setShowMenu((prevState) => !prevState);
+  };
+
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 50) {
@@ -70,21 +76,28 @@ const Header = () => {
         ref={headerRef}
         className={!showMenu ? "header__navlinks" : "header__navlinks active"}
       >
-        <NavLink onClick={handleNavClick} className="header__link" to="/">
+        <NavLink 
+          onClick={handleNavigationClick} 
+          className="header__link" 
+          to="/"
+        >
           giorgi.is()
         </NavLink>
+
         <NavLink
-          onClick={handleNavClick}
+          onClick={handleNavigationClick}
           className="header__link"
           to="/projects"
         >
           .projects()
         </NavLink>
-        <NavLink onClick={handleNavClick} className="header__link" to="/about">
+
+        <NavLink onClick={handleNavigationClick} className="header__link" to="/about">
           .about()
         </NavLink>
+
         <NavLink
-          onClick={handleNavClick}
+          onClick={handleNavigationClick}
           className="header__link"
           to="/contact"
         >
@@ -114,7 +127,7 @@ const Header = () => {
             rel="noopener noreferrer"
             href="https://medium.com/@giorgi.gutsaev"
           >
-            <BsMedium/>
+            <BsMedium />
           </a>
         </div>
       </div>

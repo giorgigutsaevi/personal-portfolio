@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/ykv0mtm.css");
+
 .introduction{
 	width: 50%;
 	margin-top: 300px;
@@ -6,6 +8,12 @@
 .introduction__name{
 	color: #dbdbdb;
 	font-size: 4rem;
+}
+
+.introduction__heading{
+	font-family: ibm-plex-mono, sans-serif;
+	font-style: normal;
+	font-weight: 700;
 }
 
 .introduction__dot{
@@ -81,24 +89,38 @@
 	
 	.introduction{
 		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		text-align: center;
 	}
 	
 	.introduction__name{
-		font-size: 2.2rem;
+		font-size: 3rem;
 	}
 
 	.introduction__is--span {
-		font-size: 2.2rem;
+		font-size: 3rem;
 	}
 	.introduction__dev--span {
-		font-size: 1rem;
-		width: 20%;
+		font-size: 1.3rem;
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 375px) {
 	.introduction{
 		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	.introduction__heading{
+		text-align: center;
 	}
 	
 	.introduction__name{
@@ -107,9 +129,10 @@
 
 	.introduction__is--span {
 		font-size: 2.2rem;
+		text-align: center;
 	}
 	.introduction__dev--span {
-		font-size: 1rem;
-		width: 20%;
+		font-size: 1.3rem;
+		width: 100%;
 	}
 }
