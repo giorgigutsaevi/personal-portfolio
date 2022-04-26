@@ -15,7 +15,6 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: flex-start;
-	
 }
 
 .languages__body--column{
@@ -39,7 +38,6 @@
 }
 
 @media only screen and (min-width: 667px) and (max-width: 915px){
-
 	.languages__body--columns{
 		display: flex;
 		flex-wrap: wrap;

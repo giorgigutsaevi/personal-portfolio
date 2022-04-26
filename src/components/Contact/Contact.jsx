@@ -4,12 +4,13 @@ import { useEffect, useState, useContext, useRef } from "react";
 import { motion } from "framer-motion";
 import ContactIntroduction from "./contact-components/ContactIntroduction/ContactIntroduction";
 import ContactForm from "./contact-components/ContactForm/ContactForm";
-import Paperplane from "./contact-components/AtomicStudent/AtomicStudent";
+import AtomicStudent from "./contact-components/AtomicStudent/AtomicStudent";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import MenuContext from "../../context/MenuContext";
 import BlurContext from "../../context/BlurContext";
+import Ufo from "./Ufo/Ufo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,17 +53,17 @@ const Contact = () => {
   useEffect(() => {
     const contactIntroduction = gsap.from(".contact-introduction", {
       opacity: 0,
-      duration: 2.5,
-      y: -300,
-    });
-
-    const formAnimation = gsap.from(".contactForm__container ", {
-      duration: 2.2,
+      duration: 2,
       x: -300,
     });
 
+    const formAnimation = gsap.from(".contactForm__container ", {
+      duration: 2,
+      x: 300,
+    });
+
     const informationBoxAnimation = gsap.from(".contactForm__infobox", {
-      duration: 2.5,
+      duration: 2,
       x: 300,
     });
 
@@ -85,7 +86,8 @@ const Contact = () => {
         className={isBlurred ? "contact darken" : "contact"}
       >
         <ContactIntroduction />
-        <Paperplane />
+        <Ufo/>
+        {/* <AtomicStudent /> */}
         <ContactForm />
       </div>
     </motion.div>

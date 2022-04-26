@@ -1,51 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://use.typekit.net/ykv0mtm.css");
 
 .bootcampText {
 	width: 50%;
 	margin-top: 400px;
-	font-family: 'Space Mono', monospace;
+	font-family: ibm-plex-mono, sans-serif;
 	font-weight: 700;
-	font-size: 2.3rem;
+	font-style: normal;
+	font-size: 2.4rem;
 }
 
-.bootcampText__academy{
+.bootcampText__academy {
 	color: #672ae9;
 }
 
-.bootcampText__line1{
+.bootcampText__line1 {
 	color: #dbdbdb;
 	margin-bottom: 10px;
 }
 
-.bootcampText__line2{
+.bootcampText__line2 {
 	color: #dbdbdb;
 	margin-top: 10px;
 }
 
-@media only screen and (min-width: 667px) and (max-width: 915px){
-	.bootcampText{
+@media only screen and (min-width: 667px) and (max-width: 915px) {
+	.bootcampText {
 		width: 60%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.bootcampText{
+	.bootcampText {
 		width: 80%
 	}
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {
-	.bootcampText{
+	.bootcampText {
 		width: 90%;
 		font-size: 1rem;
 	}
 
-	.bootcampText__line1{
+	.bootcampText__line1 {
 		white-space: initial;
 		font-size: 1.5rem;
 	}
 
-	.bootcampText__line2{
+	.bootcampText__line2 {
 		white-space: initial;
 		font-size: 1.5rem;
 		margin-top: 2em;
@@ -54,17 +55,17 @@
 }
 
 @media screen and (max-width: 375px) {
-	.bootcampText{
+	.bootcampText {
 		width: 90%;
 		font-size: 1rem;
 	}
 
-	.bootcampText__line1{
+	.bootcampText__line1 {
 		white-space: initial;
 		font-size: 1.5rem;
 	}
 
-	.bootcampText__line2{
+	.bootcampText__line2 {
 		white-space: initial;
 		font-size: 1.5rem;
 		margin-top: 2em;

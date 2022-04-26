@@ -8,10 +8,11 @@
 }
 
 .toastBody {
-	font-family: 'Space Mono', monospace;
+	font-family: ibm-plex-mono,sans-serif;
+	font-weight: 700;
+	font-style: normal;
   color: #dbdbdb;
   font-size: 1rem !important;
-	font-weight: 700;
 }
 .toastProgress {
   background: #672ae9 !important;

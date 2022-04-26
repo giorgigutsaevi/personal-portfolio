@@ -1,39 +1,40 @@
-.mentions{
+.mentions {
 	color: snow;
 	width: 50%;
 	margin-top: 450px;
-	font-family: 'Space Mono', monospace;
+	font-family: ibm-plex-mono, sans-serif;
 	font-weight: 700;
+	font-style: normal;
 	margin-bottom: 0.5rem;
 	padding: 2px;
 }
 
-.mentions__codeSymb{
+.mentions__codeSymb {
 	color: #672ae9;
 	font-size: 1.8em;
 }
 
-.mentions__comment{
+.mentions__comment {
 	color: #727474;
 	font-size: 1.4em;
 	letter-spacing: 1px;
 }
 
-.mentions__list h5{
+.mentions__list h5 {
 	color: #672ae9;
 }
 
-.acknowledgement{
+.acknowledgement {
 	color: #727474 !important;
 	margin-top: 20px !important;
 }
 
-.ouch__link{
+.ouch__link {
 	color: #dbdbdb;
 	transition: all 0.6s ease;
 }
 
-.ouch__link:hover{
+.ouch__link:hover {
 	color: #672ae9;
 }
 
@@ -41,7 +42,8 @@
 	.mentions {
 		width: 90%;
 	}
-	.mentions__list:last-child{
+
+	.mentions__list:last-child {
 		white-space: initial;
 		font-size: 1.5rem;
 	}

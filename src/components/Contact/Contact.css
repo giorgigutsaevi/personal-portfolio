@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://use.typekit.net/ykv0mtm.css");
 
 .contact {
 	width: 100%;
@@ -14,7 +14,7 @@
 	flex-flow: column nowrap;
 	align-items: center;
 	position: relative;
-	font-family: 'Space Mono', monospace;
+	font-family: ibm-plex-mono, sans-serif;
 	z-index: 0;
 	margin-bottom: 10px;
 }

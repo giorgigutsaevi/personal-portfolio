@@ -5,6 +5,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useState, useEffect, useContext, useRef } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { BsMedium } from "react-icons/bs";
 import BlurContext from "../../context/BlurContext";
 import MenuContext from "../../context/MenuContext";
 
@@ -106,6 +107,14 @@ const Header = () => {
             href="https://www.linkedin.com/in/giorgigutsaev/"
           >
             <LinkedInIcon />
+          </a>
+          <a
+            className="header__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://medium.com/@giorgi.gutsaev"
+          >
+            <BsMedium/>
           </a>
         </div>
       </div>

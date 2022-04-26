@@ -93,8 +93,8 @@ const About = () => {
       exit={{ opacity: 0 }}
     >
       <div ref={aboutRef} className={isBlurred ? "about darken" : "about"}>
-        {/* <img src="/images/portrait1.jpg" alt="" className="portrait" /> */}
-        <UFO />
+        <img src="/images/portraitG.png" alt="" className="portrait" />
+        {/* <UFO /> */}
         <AboutIntroduction />
         <Skills />
         <Languages />

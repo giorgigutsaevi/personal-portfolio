@@ -1,0 +1,50 @@
+
+.contact-ufo{
+	position: absolute;
+	top: calc(5%);
+	left: 5%;
+	z-index: -1;
+	height: 200px;
+	width: 200px;
+}
+
+.ufo__link{
+	cursor: auto;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.contact-ufo{
+		/* position: absolute;
+		transition: all 0.8s ease;
+		top: calc(20%);
+		height: 200px;
+		width: 130px; */
+	}
+}
+
+@media only screen and (min-width: 667px) and (max-width: 825px) {
+	.contact-ufo{
+		/* top: calc(32%);
+		transition: all 0.8s ease;
+		height: 350px;
+		width: 260px; */
+	}
+}
+
+@media only screen and (min-width: 667px) and (max-width: 825px) {
+	.contact-ufo{
+		/* top: calc(37%);
+		transition: all 0.8s ease;
+		height: 350px;
+		width: 260px; */
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.contact-ufo{
+		/* width: 120px;
+		transition: all 0.8s ease;
+		height: 220px;
+		top: calc(35%); */
+	}
+}

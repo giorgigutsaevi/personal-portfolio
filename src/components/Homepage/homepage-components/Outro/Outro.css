@@ -2,7 +2,9 @@
 	color: snow;
 	width: 50%;
 	margin-top: 200px;
-	font-family: 'Space Mono', monospace;
+	font-family: ibm-plex-mono, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 	margin-bottom: 50px;
 }
 
@@ -60,6 +62,7 @@
 @media screen and (max-width: 375px) {
 	.outro {
 		width: 90%;
+
 	}
 
 	.outro__title{

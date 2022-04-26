@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://use.typekit.net/ykv0mtm.css");
 
 .about {
+	overflow-x: hidden !important;
 	width: 100%;
 	will-change: contents;
 	min-height: 400px;
@@ -14,14 +15,59 @@
 	flex-flow: column nowrap;
 	align-items: center;
 	position: relative;
-	font-family: 'Space Mono', monospace;
+	font-family: ibm-plex-mono, sans-serif;
 	z-index: 0;
 }
 
-/* .portrait{
+.portrait{
 	position: absolute;
-	z-index: -10000;
-	width: 100%;
-	right: -39%;
-	opacity: 0.8;	
-} */
+	z-index: -5;
+	width: 80%;
+	right: -32%;
+	opacity: 0.5;
+}
+
+
+
+@media only screen and (min-width: 915px) and (max-width: 1184px) {
+	.portrait{
+		position: absolute;
+		z-index: -5;
+		width: 100%;
+		right: -42%;
+		opacity: 0.5;
+	}
+	
+
+}
+
+@media only screen and (min-width: 667px) and (max-width: 915px) {
+	.portrait{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		opacity: 0.45;
+	}
+
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.portrait{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		opacity: 0.7;
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+	.portrait{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		opacity: 0.7;
+	}
+
+}
