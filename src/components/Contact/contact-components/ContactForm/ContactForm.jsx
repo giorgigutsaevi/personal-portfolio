@@ -123,7 +123,7 @@ const ContactForm = () => {
           <div className="email-container">
             <EmailIcon sx={{ fontSize: 31, color: "#672ae9" }} />
             <Link to="#" onClick={handleEmailClick} className="email__link">
-              <p>giorgi.gutsaevi@gmail.com</p>
+              <p>giorgi.gutsaev@gmail.com</p>
             </Link>
           </div>
 

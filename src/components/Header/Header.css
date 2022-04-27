@@ -41,10 +41,6 @@
 	transition: all 0.7s ease-in;
 }
 
-.header__link:hover, :focus, :active {
-	color: #727474;
-}
-
 .header__link--logos {
 	display: flex
 }
@@ -52,6 +48,10 @@
 .header__link:hover {
 	transition: all 0.4s ease-in-out;
 	color: #672ae9;
+}
+
+.header__link :active {
+	color: #727474 !important;
 }
 
 .burgermenu {
@@ -75,6 +75,10 @@
 	background-color: #0d1212;
 	top: 0;
 	left: 0;
+}
+
+.selectedButton{
+	color: #727474
 }
 
 @media screen and (max-width: 1024px) {

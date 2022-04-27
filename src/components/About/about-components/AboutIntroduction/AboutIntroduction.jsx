@@ -73,6 +73,9 @@ const AboutIntroduction = () => {
           I am currently learning Python and Next.JS for that sweet Server Side
           Rendering magic.
         </p>
+        <p>
+          Always excited for innovation and happy to learn new things.
+        </p>
       </div>
     </div>
   );

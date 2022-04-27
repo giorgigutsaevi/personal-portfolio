@@ -81,7 +81,7 @@ const Header = () => {
           className="header__link" 
           to="/"
         >
-          giorgi.is()
+          gio.is()
         </NavLink>
 
         <NavLink
