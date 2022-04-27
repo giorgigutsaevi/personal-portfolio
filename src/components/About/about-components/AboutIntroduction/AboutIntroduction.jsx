@@ -51,7 +51,7 @@ const AboutIntroduction = () => {
           <button className="about__resume--button">
             <Link
               className="about__resume--link"
-              to="/files/Giorgi_Gutsaev_CV.pdf"
+              to="/files/Giorgi-Gutsaev-CV.pdf"
               target="_blank"
               download
             >
