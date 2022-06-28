@@ -93,7 +93,6 @@ const About = () => {
     >
       <div ref={aboutRef} className={isBlurred ? "about darken" : "about"}>
         <img src="/images/portraitG.png" alt="" className="portrait" />
-        {/* <UFO /> */}
         <AboutIntroduction />
         <Skills />
         <Languages />
