@@ -46,19 +46,6 @@ const AboutIntroduction = () => {
             <TwitterIcon style={{ fontSize: 34 }} />
           </a>
         </div>
-        <div className="about__download">
-          Download my{" "}
-          <button className="about__resume--button">
-            <Link
-              className="about__resume--link"
-              to="/files/Giorgi-Gutsaev-CV.pdf"
-              target="_blank"
-              download
-            >
-              Resumé <CloudDownloadIcon />
-            </Link>
-          </button>
-        </div>
       </div>
       <div className="about__brief">
         <p>
