@@ -8,7 +8,7 @@ const IntroductionText = () => {
         <br />
         <p className="introduction__h5">Giorgi Gutsaev</p>
         <p className="introduction__dev--span">
-          junior full stack developer.
+          A full stack developer.
         </p>
       </div>
     </div>
