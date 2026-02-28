@@ -62,19 +62,14 @@ const AboutIntroduction = () => {
       </div>
       <div className="about__brief">
         <p>
-          I am a junior full stack developer. I love building apps, sandwiches
-          and debugging software. I am from Georgia, based in London.
+          At this point in time, I'd like to think that I'm a fully-fledged full stack developer. I love building apps, sandwiches
+          and debugging software. I also love learning new technologies, especially in the age of AI. I'm originally from a tiny country of Georgia, but I've lived in the UK for 8 years now.
         </p>
         <p>
-          I enjoy watching the Office (US), learning all there is about cheeses
-          of the world and video games.
+          I love cheese, and cane name at least 1 cheese from the main cheese producing nations, and play video games.
         </p>
         <p>
-          I am currently learning Python and Next.JS for that sweet Server Side
-          Rendering magic.
-        </p>
-        <p>
-          Always excited for innovation and happy to learn new things.
+          Always excited for innovation and happy to learn new things. You can rely on me to stay calm and effective under pressure :)
         </p>
       </div>
     </div>
