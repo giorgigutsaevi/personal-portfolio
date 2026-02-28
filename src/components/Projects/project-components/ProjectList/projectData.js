@@ -1,7 +1,14 @@
-
 export const projectData = [
 	{
 		id: 1,
+		projectName: "WIP: Time Capsule App (for my Daughter)",
+		projectDescription: "A little side hobby application of mine to store precious moments of my daughter",
+		stack: "AWS Serverless (Lambda, DynamoDB, Cognito), React.js, GSAP",
+		link: "https://github.com/giorgigutsaevi/lile-app",
+
+	},
+	{
+		id: 2,
 		projectName: "Recipr",
 		projectDescription: "A classic recipe app built with MERN.",
 		stack: "React.js, Node.js, Express, MongoDB, Mongoose.",
