@@ -9,13 +9,6 @@ export const projectData = [
 
 	},
 	{
-		id: 2,
-		projectName: "Instagram clone",
-		projectDescription: "An intagram web application.",
-		stack: "React.js, Firebase, Firestore, Tailwind CSS.",
-		link: "https://github.com/giorgigutsaevi/React-instagram-clone",
-	},
-	{
 		id: 3,
 		projectName: "Movie Search App",
 		projectDescription: "The app uses the Movie Database API to search for movies based on the user's search query.",
